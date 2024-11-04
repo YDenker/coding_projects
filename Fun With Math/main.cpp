@@ -10,9 +10,9 @@ using std::string;
 using std::array;
 using std::function;
 
-static const int size = 7;
-static const string funcName[size] = {"Fibonacci","Fibonacci sequence","Factorial","Collatz conjecture","Catalan numbers","Triangular numbers", "Bell numbers"};
-static const array<function<std::vector<long long>(int)>, size> functions = {  funWithMaths::fibonacci, funWithMaths::fibonacciSequence, funWithMaths::factorial, funWithMaths::collatzSequence, funWithMaths::catalanNumber, funWithMaths::triangularNumber, funWithMaths::bellNumber };
+static const int size = 8;
+static const string funcName[size] = {"Fibonacci","Fibonacci sequence","Factorial","Collatz conjecture","Catalan numbers","Triangular numbers", "Bell numbers","Prime numbers"};
+static const array<function<std::vector<long long>(int)>, size> functions = {  funWithMaths::fibonacci, funWithMaths::fibonacciSequence, funWithMaths::factorial, funWithMaths::collatzSequence, funWithMaths::catalanNumber, funWithMaths::triangularNumber, funWithMaths::bellNumber, funWithMaths::primeNumbers };
 
 static void print(std::vector<long long> sequence) {
     for (long long num : sequence) {
@@ -31,9 +31,17 @@ static int mainLoop() {
     }
     std::cout << "------------------------------------------------------------------\nEnter Number: ";
     std::cin >> operation;
+    if (!std::cin || operation >= size || operation < 0) {
+        std::cout << "Invalid Value!\n";
+        return -1;
+    }
     int depth;
     std::cout << "Enter the value n for " << funcName[operation] << ": ";
     std::cin >> depth;
+    if (!std::cin) {
+        std::cout << "Invalid Value!\n";
+        return -1;
+    }
     std::cout << "Result:\n";
     print(functions[operation](depth));
     char c;
