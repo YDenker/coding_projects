@@ -13,3 +13,4 @@ project ("coding_projects")
 
 # Include sub-projects.
 add_subdirectory ("basic_concepts/Hello CMake World")
+add_subdirectory ("basic_concepts/Calculator")
