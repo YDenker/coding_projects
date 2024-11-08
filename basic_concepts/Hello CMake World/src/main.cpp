@@ -1,4 +1,4 @@
-﻿#include "HelloCMakeWorld.h"
+﻿#include "main.h"
 using namespace std;
 
 int main()
