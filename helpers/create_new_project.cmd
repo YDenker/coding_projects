@@ -1,5 +1,7 @@
 @echo off
 
+REM USAGE: (in coding_projects/helpers) .\create_new_project.cmd basic_concepts "Hello CMake World"
+
 REM Check if the user provided a directory and project name
 if "%~1"=="" (
     echo Error: Please provide a target directory.
