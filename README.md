@@ -7,10 +7,8 @@ Here is a first list of projects i want to or already have implemented (this lis
 1. Basic Concepts and Algorithms
 - Hello World – Start with basic I/O and syntax.
 - Calculator – Basic calculator with addition, subtraction, multiplication, and division.
-- Fibonacci Sequence – Generate and print a sequence.
-- Prime Number Checker – Determine if a number is prime.
-- Factorial Calculation – Recursive and iterative implementations.
-- Palindrome Checker – Check if a string or number is a palindrome.
+- Math Functions – Generate and print results of well known math functions such as fibonacci, bell numbers, ...
+- Number Checker - Determine if a number is prime, a palindrome, equal to the sum of its proper divisors, ...
 - Guessing Game – Implement a number guessing game.
 - Temperature Converter – Convert between Celsius, Fahrenheit, and Kelvin.
 - Basic Sorting Algorithms – Implement bubble, selection, and insertion sorts.
